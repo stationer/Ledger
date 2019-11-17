@@ -1,0 +1,30 @@
+{
+  "name": "stationer/ledger",
+  "description": "Financial Account Tracking System based on Graphite",
+  "homepage": "https://github.com/stationer/Ledger",
+  "require": {
+    "php": "^7.0",
+    "stationer/graphite": "*",
+    "stationer/barrel": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "larapack/dd": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Stationer\\Ledger\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/stationer/Graphite"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/stationer/Barrel"
+    }
+  ]
+}
